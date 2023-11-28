@@ -18,7 +18,7 @@ public class BalancedArray {
     }
 
     static int isBalanced(int[] a) {
-        if (a.length % 2 != 0)
+        if (a == null || a.length % 2 != 0) //must be checked if the array is null
             return 0;
 
         for (int i = 0; i < a.length; i++) {

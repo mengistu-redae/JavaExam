@@ -17,7 +17,7 @@ public class AllSameValues {
     }
 
     static int allValuesTheSame(int[] a) {
-        if (a.length <= 0)
+        if (a ==null || a.length <= 0) //should handle for null valued array too
             return 0;
 
         for (int i = 0; i < a.length - 1; i++) {

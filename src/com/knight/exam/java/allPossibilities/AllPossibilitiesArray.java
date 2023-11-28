@@ -15,7 +15,7 @@ public class AllPossibilitiesArray {
     }
 
     static int isAllPossibilities1(int[] a) {
-        if (a.length == 0)
+        if (a == null || a.length == 0)
             return 0;
 
         int[] tempArray = new int[a.length];
@@ -40,7 +40,7 @@ public class AllPossibilitiesArray {
     }
 
     static int isAllPossibilities(int[] a) {
-        if (a.length <= 0)
+        if (a == null || a.length <= 0)
             return 0;
 
         for (int i = 0; i < a.length; i++) {

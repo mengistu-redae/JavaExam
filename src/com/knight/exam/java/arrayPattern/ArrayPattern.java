@@ -21,6 +21,10 @@ public class ArrayPattern {
         for (int i = 0; i < p.length; i++) {
             int temp = p[i] < 0 ? -p[i] : p[i];
             for (int j = 0; j < temp; j++) {
+
+                if(index >= a.length) //check if index doesn't exceed the array size
+                    return 0;
+                    
                 if ((p[i] > 0 && a[index] < 0) || (p[i] < 0 && a[index] > 0)) {
                     return 0;
                 }

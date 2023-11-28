@@ -18,6 +18,9 @@ public class Array235 {
     }
 
     static int is235Array(int[] a) {
+        
+        //we are not given to return 0 or 1 if the array is empty or null.
+        
         int divisibleBy2 = 0;
         int divisibleBy3 = 0;
         int divisibleBy5 = 0;
@@ -40,5 +43,26 @@ public class Array235 {
         if (divisibleBy2 + divisibleBy3 + divisibleBy5 + notDivisible == a.length)
             return 1;
         return 0;
+    }
+
+    //OR it can be shortened using one variable as below
+    static int is235Array1(int[] a){
+        //we are not given to return 0 or 1 if the array is empty or null.
+        int count = 0;
+        for (int i = 0; i < a.length; i++){
+            if(a[i]%2 == 0)
+                count++;
+            if(a[i]%3 == 0)
+                count++;
+            if(a[i]%5 == 0)
+                count++;
+            if(a[i]%2!=0 && a[i]%3!=0 && a[i]%5 != 0)
+                count++;
+        }
+
+        if(count != a.length)
+            return 0;
+
+        return 1;
     }
 }
