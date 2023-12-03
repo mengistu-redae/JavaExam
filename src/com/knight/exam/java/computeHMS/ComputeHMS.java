@@ -18,20 +18,13 @@ public class ComputeHMS {
     static int[] computeHMS(int seconds) {
         int[] hms = new int[3];
 
-        int hour = 0;
-        int minute = 0;
-        int second = 0;
-
-        hour = seconds / 3600;
+        hms[0] = seconds / 3600; //number of hours
         seconds = seconds % 3600;
-        hms[0] = hour;
 
-        minute = seconds / 60;
+        hms[1] = seconds / 60; //number of minutes
         seconds = seconds % 60;
-        hms[1] = minute;
 
-        second = seconds;
-        hms[2] = second;
+        hms[2] = seconds; //number of seconds
 
         return hms;
     }

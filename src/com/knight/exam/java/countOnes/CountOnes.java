@@ -12,6 +12,7 @@ public class CountOnes {
     }
 
     static int countOnes(int n) {
+        //the question assumes the number n greater than 0
         int count=0;
 
         while (n > 0) {

@@ -12,15 +12,14 @@ public class ClusterCompression {
         System.out.println(Arrays.toString(clusterCompression(new int[]{0, 0, 0, 2, 0, 2, 0, 2, 0, 0})));
         System.out.println(Arrays.toString(clusterCompression(new int[]{18})));
         System.out.println(Arrays.toString(clusterCompression(new int[]{})));
+        System.out.println(Arrays.toString(clusterCompression(null))); //this case is not given in the original question
         System.out.println(Arrays.toString(clusterCompression(new int[]{-5, -5, -5, -5, -5})));
         System.out.println(Arrays.toString(clusterCompression(new int[]{1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 1})));
         System.out.println(Arrays.toString(clusterCompression(new int[]{8, 8, 6, 6, -2, -2, -2})));
     }
 
     static int[] clusterCompression(int[] a) {
-        if (a.length == 0) {
-            return new int[]{};
-        }
+        if (a == null || a.length<=1) return a;
 
         int numClusters = 1;
         for (int i = 0; i < a.length - 1; i++) {

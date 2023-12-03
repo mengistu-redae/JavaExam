@@ -15,12 +15,12 @@ public class ConcatenatedSum {
     }
 
     static int checkConcatenatedSum(int n, int catlen) {
-        int tempNum = n;
+        int nCopy = n;
         int sum = 0;
 
-        while (tempNum > 0) {
-            int digit = tempNum % 10;
-            tempNum /= 10;
+        while (nCopy > 0) {
+            int digit = nCopy % 10;
+            nCopy /= 10;
             for (int i = 1, j = 1; j <= catlen; i *= 10, j++) {
                 sum += digit * i;
             }

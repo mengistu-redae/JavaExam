@@ -10,23 +10,24 @@ public class ClosestFibonacci {
         System.out.println(closestFibonacci(12));
         System.out.println(closestFibonacci(33));
         System.out.println(closestFibonacci(34));
+        System.out.println(closestFibonacci(-34));
     }
 
     static int closestFibonacci(int n) {
-        int fibonacci = 1;
-        if (n == 1 || n == 2) {
-            fibonacci = 1;
-        }
-        int fibo1 = 1;
-        int fibo2 = 1;
-        for (int i = 3; i <= n; i++) {
-            fibonacci = fibo1 + fibo2; //Fibonacci number is sum of previous two Fibonacci number
-            if (fibonacci > n) return fibo2;
-            fibo1 = fibo2;
-            fibo2 = fibonacci;
+        if(n<1) return 0; //given direction from the question
 
+        int fib1 = 1;
+        int fib2 = 1;
+        int fib = fib1+fib2;
+        while(fib<n){
+            fib=fib1+fib2;
+            fib1=fib2;
+            fib2=fib;
         }
 
-        return 0;
+        if(fib==n) 
+            return fib;
+        
+        return fib1;
     }
 }

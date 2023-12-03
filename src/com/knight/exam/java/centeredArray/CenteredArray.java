@@ -12,18 +12,19 @@ public class CenteredArray {
         System.out.println(isCentered(new int[]{3, 2, 1, 4, 1}));
         System.out.println(isCentered(new int[]{3, 2, 1, 1, 4, 6}));
         System.out.println(isCentered(new int[]{}));
+        System.out.println(isCentered(null)); //this case not present in the original question
         System.out.println(isCentered(new int[]{1}));
     }
 
     static int isCentered(int[] a) {
-        if (a.length == 0 || a.length % 2 == 0)
+        if (a == null || a.length % 2 == 0) //should handle null array and 0 or even sized arrays
             return 0;
 
-        int centerIndex = (a.length - 1) / 2;
-        int centerValue = a[centerIndex];
+        int middleIndex = (a.length-1) / 2; //
+        int middleValue = a[middleIndex];
 
         for (int i = 0; i < a.length; i++) {
-            if (i != centerIndex && a[i] <= centerValue)
+            if (i != middleIndex && a[i] <= middleValue)
                 return 0;
         }
         return 1;

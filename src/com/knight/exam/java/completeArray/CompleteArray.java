@@ -30,14 +30,9 @@ public class CompleteArray {
     static int isComplete(int[] a) {
         int maximumEven = Integer.MIN_VALUE;
 
-        for (int anA : a) {
-            if (anA < 0) {
-                return 0;
-            }
-
-            if (anA % 2 == 0 && anA > maximumEven) {
-                maximumEven = anA;
-            }
+        for (int n : a) {
+            if (n < 0) return 0;
+            if (n % 2 == 0 && n > maximumEven) maximumEven = n;
         }
         if (maximumEven != 10) return 0;
 
@@ -45,8 +40,8 @@ public class CompleteArray {
             if (i % 2 == 0) {
                 boolean flag = false;
 
-                for (int anA : a) {
-                    if (anA == i) {
+                for (int n : a) {
+                    if (n == i) {
                         flag = true;
                         break;
                     }
@@ -59,7 +54,10 @@ public class CompleteArray {
         return 1;
     }
 
+    //another question on complete array
     static int isComplete1(int[] a) {
+        if(a == null || a.length < 2) return 0;
+
         boolean squareFlag = false;
         boolean evenFlag = false;
         boolean sumFlag = false;
@@ -84,21 +82,22 @@ public class CompleteArray {
         return 0;
     }
 
+    //another question on complete array
     static int isComplete2(int[] a) {
-        if (a.length == 0)
+        if (a == null || a.length == 0)
             return 0;
 
         int smallestEven = Integer.MAX_VALUE - 1;
         int largestEven = Integer.MIN_VALUE;
         boolean evenFlag = false;
 
-        for (int anA : a) {
-            if (anA % 2 == 0) {
+        for (int n : a) {
+            if (n % 2 == 0) {
                 evenFlag = true;
-                if (anA > largestEven)
-                    largestEven = anA;
-                if (anA < smallestEven)
-                    smallestEven = anA;
+                if (n > largestEven)
+                    largestEven = n;
+                if (n < smallestEven)
+                    smallestEven = n;
             }
         }
 
@@ -106,8 +105,8 @@ public class CompleteArray {
 
         for (int e = smallestEven; e <= largestEven; e++) {
             boolean flag = false;
-            for (int anA : a) {
-                if (anA == e) {
+            for (int n : a) {
+                if (n == e) {
                     flag = true;
                     break;
                 }
