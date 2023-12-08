@@ -5,6 +5,13 @@ package com.knight.exam.java.guthrieSequence;
  */
 public class GuthrieSequence {
 
+    public static void main(String[] args) {
+        System.out.println(isGuthrieSequence(new int[]{8, 4, 2, 1}));
+        System.out.println(isGuthrieSequence(new int[]{8, 17, 4, 1}));
+        System.out.println(isGuthrieSequence(new int[]{8, 4, 1}));
+        System.out.println(isGuthrieSequence(new int[]{8, 4, 2}));
+    }
+
     static int isGuthrieSequence(int[] a) {
         if (a[a.length - 1] != 1)
             return 0;

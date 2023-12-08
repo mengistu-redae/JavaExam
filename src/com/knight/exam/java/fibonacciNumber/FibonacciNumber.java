@@ -22,7 +22,7 @@ public class FibonacciNumber {
     }
 
     static int isFibonacci(int n) {
-        if (n == 1)
+        if (n == 1 || n == 2)
             return 1;
 
         int fibonacci = 0;

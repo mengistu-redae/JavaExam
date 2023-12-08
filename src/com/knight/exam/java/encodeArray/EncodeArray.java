@@ -31,12 +31,12 @@ public class EncodeArray {
         int[] result = new int[size];
 
         nCopy = n < 0 ? -n : n;
-        for (int i = 0; i < size; i++) {
-            if (i == 0 && n < 0) {
+        int i = 0; //array index to the 'for' loop 
+        if (i == 0 && n < 0) {
                 result[i] = -1;
                 i++;
-            }
-
+        }
+        for (; i < size; i++) {
             while (nCopy > 0) {
                 int digit = nCopy % 10;
                 nCopy /= 10;

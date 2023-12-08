@@ -1,9 +1,16 @@
 package com.knight.exam.java.factorialSum;
 
+import java.util.Arrays;
+
 /**
  * Created by sachinkeshav on 12/29/14.
  */
 public class FactorialSum {
+
+    
+    public static void main(String[] args) {
+        System.out.println(Arrays.toString(FactorialSum.solve10()));
+    }
 
     static int[] solve101() {
         int fact10 = factorial(10);

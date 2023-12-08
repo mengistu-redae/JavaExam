@@ -42,4 +42,5 @@ public class IsolatedNumber {
 
         return 1;
     }
+
 }

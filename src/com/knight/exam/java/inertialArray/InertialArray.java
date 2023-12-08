@@ -5,48 +5,16 @@ package com.knight.exam.java.inertialArray;
  */
 public class InertialArray {
 
-    static int isInertialArray(int[] a) {
-        boolean oddFlag = false;
-        boolean maxEvenFlag = false;
-        boolean oddGtEvenFlag = false;
-
-        int max = Integer.MIN_VALUE;
-
-        int largestEven = max;
-
-        int smallestOdd = Integer.MAX_VALUE;
-
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] > max)
-                max = a[i];
-
-            if (a[i] % 2 != 0) {
-                oddFlag = true;
-                if (a[i] < smallestOdd)
-                    smallestOdd = a[i];
-            } else if (largestEven < max)
-                largestEven = a[i];
-
-            if (max % 2 == 0)
-                maxEvenFlag = true;
-            else maxEvenFlag = false;
-
-        }
-        if (smallestOdd > largestEven)
-            oddGtEvenFlag = true;
-
-        System.out.println("smallestOdd = " + smallestOdd);
-        System.out.println("largestEven = " + largestEven);
-        ;
-
-        System.out.println("oddFlag = " + oddFlag);
-        System.out.println("maxEvenFlag = " + maxEvenFlag);
-        System.out.println("oddGtEvenFlag = " + oddGtEvenFlag);
-
-        if (oddFlag && maxEvenFlag && oddGtEvenFlag)
-            return 1;
-        else
-            return 0;
+    public static void main(String[] args) {
+        System.out.println(isInertial(new int[]{1}));
+        System.out.println(isInertial(new int[]{2}));
+        System.out.println(isInertial(new int[]{1, 2, 3, 4}));
+        System.out.println(isInertial(new int[]{1, 1, 1, 1, 1, 1, 2}));
+        System.out.println(isInertial(new int[]{2, 12, 4, 6, 8, 11}));
+        System.out.println(isInertial(new int[]{2, 12, 12, 4, 6, 8, 11}));
+        System.out.println(isInertial(new int[]{-2, -4, -6, -8, -11}));
+        System.out.println(isInertial(new int[]{2, 3, 5, 7}));
+        System.out.println(isInertial(new int[]{2, 4, 6, 8, 10}));
     }
 
     static int isInertial1(int[] a) {

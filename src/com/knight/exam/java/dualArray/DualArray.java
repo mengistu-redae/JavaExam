@@ -34,6 +34,7 @@ public class DualArray {
         return 1;
     }
 
+    
     static int isDual(int[] a) {
         for (int a1 : a) {
             int count = 0;
@@ -49,6 +50,9 @@ public class DualArray {
     }
 
     static int isDual2(int[] a) {
+
+        if(a == null || a.length == 0)  return 1; //according to the given in the question
+        
         if (a.length % 2 != 0 || a.length < 4)
             return 0;
 

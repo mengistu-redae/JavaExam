@@ -17,7 +17,8 @@ public class GoodSpread {
                 if (a[i] == a[j]) {
                     count++;
 
-                    if (count > 3) return 0;
+                    if (count > 3) 
+                        return 0;
                 }
             }
         }

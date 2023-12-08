@@ -14,6 +14,8 @@ public class DivisibleBy {
     }
 
     static int isDivisible(int[] a, int divisor) {
+        if(a == null || a.length == 0) retrn 1; //according to the given in the question
+        
         for (int anA : a) {
             if (anA % divisor != 0)
                 return 0;

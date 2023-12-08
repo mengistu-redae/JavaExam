@@ -15,7 +15,7 @@ public class CubePerfect {
     }
 
     static int isCubePerfect(int[] a) {
-        if (a.length == 0)
+        if (a == null || a.length == 0)
             return 1;
 
         for (int anA : a) {

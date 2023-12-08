@@ -13,27 +13,29 @@ public class FineArray {
     }
 
     static int isFineArray(int[] a) {
-        int twinPrime = 0;
-        boolean twinPrimeFlag = false;
+        int twinPrime1 = 0;
+        int twinPrime2 = 0;
+        boolean twinPrimeFlag1 = false;
+        boolean twinPrimeFlag2 = false;
 
         for (int i = 0; i < a.length; i++) {
             if (isPrime(a[i]) == 1) {
                 if (isPrime(a[i] - 2) == 0 && isPrime(a[i] + 2) == 0)
                     return 0;
                 if (isPrime(a[i] - 2) == 1) {
-                    twinPrime = a[i] - 2;
-                    twinPrimeFlag = true;
+                    twinPrime1 = a[i] - 2;
+                    twinPrimeFlag1 = true;
                 }
                 if (isPrime(a[i] + 2) == 1) {
-                    twinPrime = a[i] + 2;
-                    twinPrimeFlag = true;
+                    twinPrime2 = a[i] + 2;
+                    twinPrimeFlag2 = true;
                 }
             }
 
-            if (twinPrimeFlag) {
+            if (twinPrimeFlag1 || twinPrimeFlag2) {
                 boolean flag = false;
                 for (int j = 0; j < a.length; j++) {
-                    if (a[j] == twinPrime) {
+                    if ((twinPrimeFlag1 && a[j] == twinPrime1) || (twinPrimeFlag2 && a[j] == twinPrime2)) {
                         flag = true;
                         break;
                     }

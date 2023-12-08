@@ -24,12 +24,9 @@ public class CubePowerful {
         while (nCopy > 0) {
             int digit = nCopy % 10;
             nCopy /= 10;
-            int product = 1;
-
-            for (int i = 1; i <= 3; i++) {
-                product *= digit;
-            }
-            sum += product;
+            int cube = digit;
+            
+            sum += cube;
         }
 
         if (sum == n) return 1;

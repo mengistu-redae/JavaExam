@@ -15,7 +15,7 @@ public class LayeredArray {
     }
 
     static int isLayered(int[] a) {
-        if (a.length <= 1)
+        if (a == null || a.length <= 1)
             return 0;
 
         int count = 1;

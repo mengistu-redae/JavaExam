@@ -14,6 +14,29 @@ public class LargestDifference {
     }
 
     static int largestDifferenceOfEvens(int[] a) {
+        
+        int countEven = 0 ;
+        int minEven = Integer.MAX_VALUE;
+        int maxEven = Integer.MIN_VALUE;
+
+        //count even, identify minEven and maxEven
+        for (int n : a) {
+            if (n%2 == 0) {
+                countEven++;
+                if (minEven > n) 
+                    minEven = n ;
+                if(maxEven < n)
+                    maxEven = n;
+            }
+        }
+
+        if(countEven >= 2)
+            return maxEven - minEven;
+
+        return -1;
+    }
+    
+    static int largestDifferenceOfEvens1(int[] a) {
         boolean evenFlag = false;
         int largestDiff = 0;
         for (int i = 0; i < a.length; i++) {
@@ -32,4 +55,5 @@ public class LargestDifference {
 
         return largestDiff;
     }
+
 }

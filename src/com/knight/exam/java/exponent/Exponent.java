@@ -23,7 +23,8 @@ public class Exponent {
         for (int num = n; num > 0; num /= p) {
             if (num % p == 0)
                 count++;
-            else break;
+            else 
+                break;
         }
         return count;
     }
@@ -38,7 +39,8 @@ public class Exponent {
         while (n > 0) {
             if (n % p == 0)
                 count++;
-            else break;
+            else 
+                break;
 
             n /= p;
         }
