@@ -5,6 +5,11 @@ package com.knight.exam.java.squarePair;
  */
 public class SquarePair {
 
+    public static void main(String[] args) {
+        System.out.println(SquarePair.countSquarePair(new int[]{9, 0, 2, -5, 7}));
+        System.out.println(SquarePair.countSquarePair(new int[]{9}));
+    }
+    
     static int countSquarePair(int[] a) {
         int count = 0;
 

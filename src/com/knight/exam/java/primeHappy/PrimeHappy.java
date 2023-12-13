@@ -14,6 +14,10 @@ public class PrimeHappy {
     }
 
     static int isPrimeHappy(int n) {
+
+        if(n <= 2)
+            return 0;
+            
         int number = 2;
         boolean primeFlag = false;
         int sum = 0;

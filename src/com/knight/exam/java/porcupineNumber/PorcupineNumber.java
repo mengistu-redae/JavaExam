@@ -5,6 +5,10 @@ package com.knight.exam.java.porcupineNumber;
  */
 public class PorcupineNumber {
 
+    public static void main(String[] args) {
+        System.out.println(findPorcupineNumber(139));
+    }
+
     static int findPorcupineNumber1(int n) {
         for (int i = n + 1; n < Integer.MAX_VALUE; i++) {
             if (isPrime(i)) {

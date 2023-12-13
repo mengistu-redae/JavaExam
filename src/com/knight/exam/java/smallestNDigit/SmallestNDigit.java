@@ -18,6 +18,28 @@ public class SmallestNDigit {
     static int smallest(int n) {
         int num = 1;
         while (true) {
+            int count = 0;
+            int prod = num;
+            for (int i = 1; i <= n; i++) {
+                prod = num * i;
+                while (prod > 0) {
+                    int digit = prod % 10;
+                    prod /= 10;
+                    if (digit == 2) {
+                        count++;
+                        break;
+                    }
+                }
+                if (count == n)
+                    return num;
+            }
+            num++;
+        }
+    }
+
+    static int smallest1(int n) {
+        int num = 1;
+        while (true) {
             boolean flag = false;
             for (int i = 1; i <= n; i++) {
                 flag = false;

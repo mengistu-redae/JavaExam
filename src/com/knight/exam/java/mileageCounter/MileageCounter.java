@@ -34,8 +34,8 @@ public class MileageCounter {
             miles = a[i] + miles;
             if (miles > 9) {
                 int tempMiles = miles % 10;
-                miles /= 10;
                 a[i] = tempMiles;
+                miles /= 10;
             } else {
                 a[i] = miles;
                 miles = 0;

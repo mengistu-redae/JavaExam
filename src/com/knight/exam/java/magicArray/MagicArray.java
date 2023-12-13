@@ -15,7 +15,7 @@ public class MagicArray {
     }
 
     static int isMagicArray(int[] a) {
-        if (a.length == 0)
+        if (a == null || a.length == 0)
             return 0;
 
         int primeSum = 0;

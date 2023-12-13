@@ -12,6 +12,15 @@ public class PrimeFactor {
         System.out.println(largestPrimeFactor(6936));
         System.out.println(largestPrimeFactor(1));
         System.out.println(largestPrimeFactor(11));
+
+        System.out.println();
+        System.out.println(Arrays.toString(encodeNumber(2)));
+        System.out.println(Arrays.toString(encodeNumber(6)));
+        System.out.println(Arrays.toString(encodeNumber(14)));
+        System.out.println(Arrays.toString(encodeNumber(24)));
+        System.out.println(Arrays.toString(encodeNumber(1200)));
+        System.out.println(Arrays.toString(encodeNumber(1)));
+        System.out.println(Arrays.toString(encodeNumber(-18)));
     }
 
     static int largestPrimeFactor(int n) {
@@ -38,6 +47,38 @@ public class PrimeFactor {
     }
 
     static int[] encodeNumber(int n) {
+        if ( n <= 1) 
+            return null;
+            
+        int size = 0;
+        int nCopy = n;
+        for (int i = 2;  i <= nCopy; ) {
+            if(isPrime(i) && nCopy%i == 0){
+                size++;
+                nCopy/=i;
+            }
+            else{
+                i++;
+            }
+        }
+
+        int[] result = new int[size];        
+        int index = 0;
+        nCopy = n;
+        for (int i = 2;  i <= nCopy; ) {
+            if(isPrime(i) && nCopy%i == 0){
+                result[index] = i;
+                nCopy/=i;
+                index++;
+            }
+            else{
+                i++;
+            }
+        }
+        return result;
+    }
+
+    static int[] encodeNumber1(int n) {
         if (n <= 1) return null;
         int size = 0;
         int number = 2;

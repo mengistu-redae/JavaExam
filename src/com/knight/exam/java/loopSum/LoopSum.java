@@ -14,12 +14,24 @@ public class LoopSum {
 
     static int loopSum(int[] a, int n) {
         int sum = 0;
-
-        for (int i = 0, index = 0; i < a.length && index < n; i++, index++) {
+        for (int counter = 0, i =0 ; counter < n; counter++, i++) {
+            if(counter > a.length-1)
+                i = counter%(a.length);
+            
             sum += a[i];
-            if (i == a.length - 1 && index != n - 1)
+        }
+        return sum;
+    }
+
+    static int loopSum1(int[] a, int n) {
+        int sum = 0;
+
+        for (int i = 0, counter = 0; i < a.length && counter < n; i++, counter++) {
+            sum += a[i];
+            if (i == a.length - 1 && counter != n - 1)
                 i = -1;
         }
         return sum;
     }
+
 }

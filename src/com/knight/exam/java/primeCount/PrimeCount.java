@@ -4,6 +4,17 @@ package com.knight.exam.java.primeCount;
  * Created by sachinkeshav on 12/23/14.
  */
 public class PrimeCount {
+    
+    public static void main(String[] args) {
+        System.out.println(primeCount1(10, 30));
+        System.out.println(primeCount1(11, 29));
+        System.out.println(primeCount1(20, 22));
+        System.out.println(primeCount1(1, 1));
+        System.out.println(primeCount1(5, 5));
+        System.out.println(primeCount1(6, 2));
+        System.out.println(primeCount1(-10, 6));
+    }
+    
     static int primeCount(int start, int end) {
         int counter = 0;
 
@@ -28,16 +39,6 @@ public class PrimeCount {
         }
 
         return counter;
-    }
-
-    public static void main(String[] args) {
-        System.out.println(primeCount1(10, 30));
-        System.out.println(primeCount1(11, 29));
-        System.out.println(primeCount1(20, 22));
-        System.out.println(primeCount1(1, 1));
-        System.out.println(primeCount1(5, 5));
-        System.out.println(primeCount1(6, 2));
-        System.out.println(primeCount1(-10, 6));
     }
 
     static int primeCount1(int start, int end) {

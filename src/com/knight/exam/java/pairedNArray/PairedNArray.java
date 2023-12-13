@@ -18,7 +18,7 @@ public class PairedNArray {
 
     static int isPairedN(int[] a, int n) {
 
-        if (a.length <= 1 || n > a.length + 1 || n < 0)
+        if (a == null || a.length <= 1 || n > a.length + 1 || n < 0)
             return 0;
 
         for (int i = 0; i < a.length; i++) {

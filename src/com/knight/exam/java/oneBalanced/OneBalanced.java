@@ -21,7 +21,7 @@ public class OneBalanced {
         int totalNon1s = 0;
         boolean non1Start = false;
         boolean non1End = false;
-        if (a.length == 0) return 1;
+        if (a == null || a.length == 0) return 1;
         for (int number : a) {
             if (number == 1) {
                 if (non1Start) non1End = true;

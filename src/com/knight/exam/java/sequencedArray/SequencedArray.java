@@ -20,7 +20,7 @@ public class SequencedArray {
     }
 
     static int isSequencedArray(int[] a, int m, int n) {
-        if (a.length <= 1 || a[0] != m || a[a.length - 1] != n || m > n)
+        if (a == null || a.length <= 1 || a[0] != m || a[a.length - 1] != n || m > n)
             return 0;
 
         for (int i = m; i <= n; i++) {

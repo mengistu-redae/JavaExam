@@ -29,9 +29,8 @@ public class PackedArray {
             if (a[i] <= 0)
                 return 0;
             for (j = i; j < i + a[i]; j++) {
-                if (a[i] != a[j]) {
+                if (i + a[i] < a.length && a[i] != a[j]) 
                     return 0;
-                }
             }
 
             for (int anA : a) {

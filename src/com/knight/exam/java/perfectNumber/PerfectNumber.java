@@ -5,6 +5,10 @@ package com.knight.exam.java.perfectNumber;
  */
 public class PerfectNumber {
 
+    public static void main(String[] args) {
+        System.out.println(henry(1, 3));
+    }
+
     static int henry1(int i, int j) {
         int count = 0;
         int result = 0;

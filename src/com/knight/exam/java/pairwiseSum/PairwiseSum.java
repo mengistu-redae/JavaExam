@@ -15,7 +15,7 @@ public class PairwiseSum {
     }
 
     static int[] pairwiseSum(int[] a) {
-        if (a.length <= 0 || a.length % 2 != 0)
+        if (a == null || a.length <= 0 || a.length % 2 != 0)
             return null;
 
         int[] result = new int[a.length / 2];

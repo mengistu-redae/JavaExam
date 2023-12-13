@@ -20,6 +20,30 @@ public class MercurialArray {
     static int isMercurial(int[] a) {
 
         boolean precedingOneFlag = false;
+        boolean succedingOneFlag = false;
+        boolean three = false;
+
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == 1 && !three)
+                precedingOneFlag = true;
+
+            if (a[i] == 3 && precedingOneFlag) 
+                three = true;
+ 
+            if (a[i] == 1 && precedingOneFlag && three && !succedingOneFlag)
+                succedingOneFlag = true;
+
+            if (precedingOneFlag && three && succedingOneFlag)
+                return 0;
+        }
+
+        return 1;
+    }
+
+    //OR in another way
+    static int isMercurial1(int[] a) {
+
+        boolean precedingOneFlag = false;
 
         int indexOf3 = -1;
         int indexOf1 = -1;

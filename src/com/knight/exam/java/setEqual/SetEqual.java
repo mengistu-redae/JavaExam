@@ -13,6 +13,35 @@ public class SetEqual {
     }
 
     static int isSetEqual(int[] a, int[] b) {
+        
+        for (int anA : a) {
+            boolean flag = false;
+            for (int aB : b) {
+                if (aB == anA) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag)
+                return 0;
+        }
+
+        for (int aB : b) {
+            boolean flag = false;
+            for (int anA : a) {
+                if (aB == anA) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag)
+                return 0;
+        }
+
+        return 1;
+    }
+
+    static int isSetEqual1(int[] a, int[] b) {
         for (int anA : a) {
             boolean flag = false;
             for (int aB : b) {

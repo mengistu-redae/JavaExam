@@ -15,6 +15,22 @@ public class BaseConversion {
     static int convertToBase10(int[] a, int base) {
         if (LegalNumber.isLegalNumber(a, base) == 1) {
             int base10 = 0;
+            int x = a.length - 1; //used to calculate number of times for the base
+            for (int i = 0; i < a.length; i++) {
+                int baseProd = 1;
+                for (int j = 1; j <= x - i; j++) {
+                    baseProd *= base;
+                }
+                base10 += a[i] * baseProd;
+            }
+            return base10;
+        }
+        return -1;
+    }
+    
+    static int convertToBase10_1(int[] a, int base) {
+        if (LegalNumber.isLegalNumber(a, base) == 1) {
+            int base10 = 0;
             for (int i = 0; i < a.length; i++) {
                 int baseProd = 1;
                 for (int j = i + 1; j < a.length; j++) {
@@ -26,4 +42,5 @@ public class BaseConversion {
         }
         return -1;
     }
+
 }

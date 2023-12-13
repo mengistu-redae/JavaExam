@@ -1,0 +1,910 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "AdjacentSum",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.adjacentSum.AdjacentSum",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "AllPossibilitiesArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.allPossibilities.AllPossibilitiesArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "AllSameValues",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.allSameVaues.AllSameValues",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "Anagrams",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.anagrams.Anagrams",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "Array121",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.array121.Array121",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "Array235",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.array235.Array235",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ArrayPattern",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.arrayPattern.ArrayPattern",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BalancedArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.balancedArray.BalancedArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BeanArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.beanArray.BeanArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BEQNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.beqNumber.BEQNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BMIDataManager",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.bmiDtaManager.BMIDataManager",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BunkerArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.bunkerArray.BunkerArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BunkerNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.bunkerNumber.BunkerNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CenteredArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.centeredArray.CenteredArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CenteredFifteen",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.centeredFifteen.CenteredFifteen",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ClosestFibonacci",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.closestFibonacci.ClosestFibonacci",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ClusterCompression",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.clusterCompression.ClusterCompression",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CompleteArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.completeArray.CompleteArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ComputeDepth",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.computeDepth.ComputeDepth",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ComputeHMS",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.computeHMS.ComputeHMS",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ConcatenatedSum",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.concatenatedSum.ConcatenatedSum",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ConsecutiveFactored",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.consecutiveFactored.ConsecutiveFactored",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ContinuousFactored",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.continuousFactored.ContinuousFactored",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CountDigit",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.countDigit.CountDigit",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CountOnes",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.countOnes.CountOnes",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CountRepresentation",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.countRepresentation.CountRepresentation",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CubePerfect",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.cubePerfect.CubePerfect",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "CubePowerful",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.cubePowerful.CubePowerful",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "DaphneArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.daphneArray.DaphneArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "DaphneArray1",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.daphneArray.DaphneArray1",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "DecodeArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.decodeArray.DecodeArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "DigitIncreasing",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.digitInceasing.DigitIncreasing",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "DigitSum",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.digitSum.DigitSum",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "DivisibleBy",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.divisibleBy.DivisibleBy",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "DualArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.dualArray.DualArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "EncodeArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.encodeArray.EncodeArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "EncodeNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.encodeNumber.EncodeNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "Eval",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.eval.Eval",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "EvensNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.evensNumber.EvensNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "Exponent",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.exponent.Exponent",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FactorEqual",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.factorEqual.FactorEqual",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FactorTwoCount",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.factorTwoCount.FactorTwoCount",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FactorialPrime",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.factorialPrime.FactorialPrime",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FactorialSum",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.factorialSum.FactorialSum",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FancyNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.fancyNumber.FancyNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FibonacciNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.fibonacciNumber.FibonacciNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FillArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.fillArray.FillArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BinaryRepresentation",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.filterArray.BinaryRepresentation",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FineArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.fineArray.FineArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "FullnessQuotient",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.fullnessQuotient.FullnessQuotient",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "GoodSpread",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.goodSpread.GoodSpread",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "GuthrieIndex",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.guthrieIndex.GuthrieIndex",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "GuthrieSequence",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.guthrieSequence.GuthrieSequence",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "HolderNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.holderNumber.HolderNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "HollowArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.hollowArray.HollowArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "InertialArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.inertialArray.InertialArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "IntegerBasedRounding",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.integerBasedRounding.IntegerBasedRounding",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "IsSquare",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.isSquare.IsSquare",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "IsolatedNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.isolatedNumber.IsolatedNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "KSmallFactors",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.kSmallFactors.KSmallFactors",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "LargestDifference",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.largestDifference.LargestDifference",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "LayeredArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.layeredArray.LayeredArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "BaseConversion",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.legalNumber.BaseConversion",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "LegalNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.legalNumber.LegalNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "LoopSum",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.loopSum.LoopSum",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MadhavArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.madhavArray.MadhavArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MagicArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.magicArray.MagicArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MartianArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.martianArray.MartianArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MeeraArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.meeraArray.MeeraArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MeeraNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.meeraNumber.MeeraNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MercurialArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.mercurialArray.MercurialArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MileageCounter",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.mileageCounter.MileageCounter",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MinDistance",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.minDistance.MinDistance",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "MinMaxDisjoint",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.minMaxDisjoint.MinMaxDisjoint",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "NPrimeable",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.nPrimeable.NPrimeable",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "NUnique",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.nUnique.NUnique",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "UpCount",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.nUpCount.UpCount",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "UpCountTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.nUpCount.UpCountTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "NValuesArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.nValuesArray.NValuesArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "NewCharArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.newCharArray.NewCharArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "NiceArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.niceArray.NiceArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "NonZeroArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.nonZeroArray.NonZeroArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "NormalNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.normalNumber.NormalNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "OddEvenSum",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.oddEvenSum.OddEvenSum",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "OddHeavy",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.oddHeavy.OddHeavy",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "OddValent",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.oddValent.OddValent",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "OneBalanced",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.oneBalanced.OneBalanced",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "OnionArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.onionArray.OnionArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PackedArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.packedArray.PackedArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PairedNArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.pairedNArray.PairedNArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PairwiseSum",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.pairwiseSum.PairwiseSum",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PatternMatcher",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.patternMatcher.PatternMatcher",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PerfectNumberTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.perfectNumber.PerfectNumberTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PerfectSquare",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.perfectSquare.PerfectSquare",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PerfectSquareTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.perfectSquare.PerfectSquareTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PorcupineNumberTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.porcupineNumber.PorcupineNumberTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PrimeCount",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.primeCount.PrimeCount",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PrimeCountTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.primeCount.PrimeCountTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PrimeFactor",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.primeFactor.PrimeFactor",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PrimeHappy",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.primeHappy.PrimeHappy",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "PrimeProduct",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.primeProduct.PrimeProduct",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "RailroadTie",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.railroadTie.RailroadTie",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "RepsEqualTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.repsEqual.RepsEqualTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SameNumberOfFactors",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.sameNumberFactors.SameNumberOfFactors",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SecondLargest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.secondLargest.SecondLargest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SequencedArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.sequencedArray.SequencedArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SequentiallyBounded",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.sequentiallyBounded.SequentiallyBounded",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SetEqual",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.setEqual.SetEqual",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SmallestNDigit",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.smallestNDigit.SmallestNDigit",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SmartNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.smartNumber.SmartNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SquarePairTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.squarePair.SquarePairTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "StackedNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.stackedNumber.StackedNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "StantonMeasureTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.stantonMeasure.StantonMeasureTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SumDigits",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.sumDigits.SumDigits",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SumFactorTest",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.sumFactor.SumFactorTest",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SumSafe",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.sumSafe.SumSafe",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "SystematicallyIncreasing",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.systematicallyIncreasing.SystematicallyIncreasing",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "TriangularNumber",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.triangularNumber.TriangularNumber",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "TripleArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.tripleArray.TripleArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "TrivalentArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.trivalentArray.TrivalentArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "TwinArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.twinArray.TwinArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "TwinPrime",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.twinPrime.TwinPrime",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "VanillaArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.vanillaArray.VanillaArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "Vesuvian",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.vesuvian.Vesuvian",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "WaveArray",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.waveArray.WaveArray",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ZeroBalanced",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.zeroBalanced.ZeroBalanced",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ZeroLimited",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.zeroLimited.ZeroLimited",
+            "projectName": "JavaExam_76be474b"
+        },
+        {
+            "type": "java",
+            "name": "ZeroPlentiful",
+            "request": "launch",
+            "mainClass": "com.knight.exam.java.zeroPlentiful.ZeroPlentiful",
+            "projectName": "JavaExam_76be474b"
+        }
+    ]
+}

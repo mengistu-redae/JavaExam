@@ -11,15 +11,17 @@ public class OnionArray {
     }
 
     static int isOnionArray(int[] a) {
-        if (a.length == 1 || a.length ==0)
+        if (a == null || a.length <= 1)
             return 1;
 
-        for (int i = 0, j = a.length - 1; i < j; i++, j--) {
-            if (i + j == a.length) {
-                if (a[i] + a[j] > 10)
-                    return 0;
-            }
-        }
+        //there is a problem in the question.
+        //according to the condition it sayas j+k==a.length
+        //but in the given example, it takes j+k==a.length-1
+        //so, we assume j+k==a.length-1 as a the genuine one
+        for (int j = 0, k = a.length - 1; j < k; j++, k--) 
+            if (j + k == a.length-1 && a[k] + a[j] > 10) 
+                return 0;
+            
         return 1;
     }
 }
