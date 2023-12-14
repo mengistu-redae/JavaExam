@@ -14,31 +14,34 @@ public class TrivalentArray {
         System.out.println(isTrivalent(new int[]{2147483647, -1, -1, -2147483648}));
     }
 
+
     static int isTrivalent(int[] a) {
 
-        int[] tempArray = new int[a.length];
-        for (int i = 0; i < tempArray.length; i++)
-            tempArray[i] = Integer.MIN_VALUE;
+        if(a==null || a.length<3) return 0;
+        
+        int[] temp = new int[a.length];
+        for (int i = 0; i < temp.length; i++)
+            temp[i] = Integer.MIN_VALUE;
 
         int index = 0;
-        for (int anA : a) {
-            boolean flag = true;
+        for (int n : a) {
+            boolean unique = true;
             for (int k = 0; k < index; k++) {
-                if (tempArray[k] == anA) {
-                    flag = false;
+                if (temp[k] == n) {
+                    unique = false;
                     break;
-                } else {
-                    flag = true;
                 }
             }
 
-            if (flag) {
-                tempArray[index] = anA;
+            if (unique) {
+                temp[index] = n;
                 index++;
             }
         }
 
-        if (index != 3) return 0;
-        else return 1;
+        if (index != 3) 
+            return 0;
+
+        return 1;
     }
 }

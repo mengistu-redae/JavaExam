@@ -5,8 +5,19 @@ package com.knight.exam.java.stantonMeasure;
  */
 public class StantonMeasure {
 
+    public static void main(String[] args) {
+        System.out.println(StantonMeasure.stantonMeasure(new int[]{1}));
+        System.out.println(StantonMeasure.stantonMeasure(new int[]{0}));
+        System.out.println(StantonMeasure.stantonMeasure(new int[]{3, 1, 1, 4}));
+        System.out.println(StantonMeasure.stantonMeasure(new int[]{1, 3, 1, 1, 3, 3, 2, 3, 3, 3, 4}));
+        System.out.println(StantonMeasure.stantonMeasure(new int[]{}));
+    }
+
     static int stantonMeasure(int[] a) {
 
+        if(a==null || a.length==0)
+            return 0;
+            
         int oneCount=0;
         int stantonMeasure = 0;
 

@@ -16,7 +16,37 @@ public class ZeroPlentiful {
     }
 
     static int isZeroPlentiful(int[] a) {
-        if (a.length < 4)
+        if (a == null || a.length < 4)
+            return 0;
+
+        int count = 0;
+        int sequence = 0;
+        boolean counting = false;
+        for (int i=0; i<a.length; i++){
+            if(a[i] == 0){
+                count++;
+                counting = true;
+            }
+            else if (a[i] !=0 ) {
+                if (counting) {
+                    counting=false;
+                    if (count < 4) 
+                        return 0;
+                    if (count >= 4)
+                        sequence++;
+                }
+            }
+        }
+        
+        if(counting && count >= 4)
+            sequence++;
+
+        return sequence;
+    }
+
+    //OR in other way
+    static int isZeroPlentiful1(int[] a) {
+        if (a == null || a.length < 4)
             return 0;
 
         int count = 0;
@@ -38,6 +68,7 @@ public class ZeroPlentiful {
                 }
 
                 i = j;
+
             } else i++;
         }
 

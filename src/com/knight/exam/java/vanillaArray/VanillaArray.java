@@ -6,7 +6,7 @@ package com.knight.exam.java.vanillaArray;
 public class VanillaArray {
 
     public static void main(String[] args) {
-        System.out.println(isVanilla(new int[]{1, 1, 11, 1111, 1111111}));
+        System.out.println(isVanilla(new int[]{-1, 1, 11, 1111, 1111111}));
         System.out.println(isVanilla(new int[]{11, 101, 1111, 11111}));
         System.out.println(isVanilla(new int[]{11, 222, 1111, 11111}));
         System.out.println(isVanilla(new int[]{1}));
@@ -32,16 +32,17 @@ public class VanillaArray {
     }
 
     static int isVanilla(int[] a) {
-        if (a.length == 0)
+        if (a==null || a.length <= 1)
             return 1;
 
-        int digit = a[0] % 10;
-
-        for (int anA : a) {
-            anA = anA < 0 ? -anA : anA;
-            while (anA > 0) {
-                int d = anA % 10;
-                anA /= 10;
+        int num = a[0] > 0 ? a[0] : -a[0];
+        int digit = num % 10;
+        
+        for (int n : a) {
+            n = n < 0 ? -n : n;
+            while (n > 0) {
+                int d = n % 10;
+                n /= 10;
                 if (d != digit)
                     return 0;
             }

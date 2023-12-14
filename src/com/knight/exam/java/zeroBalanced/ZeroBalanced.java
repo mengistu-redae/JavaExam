@@ -17,26 +17,26 @@ public class ZeroBalanced {
 
     static int isZeroBalanced(int[] a) {
 
-        if (a.length <= 1)
+        if (a == null || a.length == 0)
             return 0;
 
         int sum = 0;
-        boolean negativeFlag = false;
         for (int i = 0; i < a.length; i++) {
-            negativeFlag = a[i] <= 0;
-
             sum += a[i];
+            boolean flag = false;
             for (int j = 0; j < a.length; j++) {
-                if (a[i] > 0 && a[i] == -a[j]) {
-                    negativeFlag = true;
+                if (a[i] == -a[j]) { 
+                    flag = true;
                     break;
                 }
             }
-            if (!negativeFlag)
+            if (!flag)
                 return 0;
         }
 
-        if (sum == 0) return 1;
+        if (sum == 0) 
+            return 1;
+
         return 0;
     }
 }

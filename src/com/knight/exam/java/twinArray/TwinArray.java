@@ -14,25 +14,22 @@ public class TwinArray {
     }
 
     static int isTwin(int[] a) {
-        boolean twinPrimeFlag;
-        for (int a1 : a) {
-            twinPrimeFlag = true;
-            if (isPrime(a1) && (isPrime(a1 - 2) || isPrime(a1 + 2))) {
-                twinPrimeFlag = false;
-                for (int a2 : a) {
-                    if (isPrime(a1 - 2) && a2 == a1 - 2) {
-                        twinPrimeFlag = true;
-                        break;
-                    }
+        if(a==null || a.length<1) 
+            return 0;
 
-                    if (isPrime(a1 + 2) && a2 == a1 + 2) {
+        for (int a1 : a) {
+            boolean twinPrimeFlag = false;
+            if (isPrime(a1) && (isPrime(a1 - 2) || isPrime(a1 + 2))) {
+                for (int a2 : a) {
+                    if ((isPrime(a1 - 2) && a2 == a1 - 2) || (isPrime(a1 + 2) && a2 == a1 + 2)) {
                         twinPrimeFlag = true;
                         break;
                     }
                 }
+                
+                if (!twinPrimeFlag)
+                    return 0;
             }
-            if (!twinPrimeFlag)
-                return 0;
         }
         return 1;
     }
