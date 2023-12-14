@@ -47,10 +47,7 @@ public class Array121 {
 
     //OR it can be done usiing one loop as following
     static int is121Array1(int[] a){
-        if(a == null || a.length < 3)
-            return 0;
-        
-        if(a[0] != 1 || a[a.length-1] != 1) //this condition can not be combined with the above condtion, this can raise index outbound exception
+        if(a == null || a.length < 3 || a[0] != 1 || a[a.length-1] != 1)
             return 0;
 
         int count = 0;
