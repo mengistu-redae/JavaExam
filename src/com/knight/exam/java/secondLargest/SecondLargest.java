@@ -15,8 +15,8 @@ public class SecondLargest {
     }
 
     static int secondLargest(int[] a) {
-        int max = -1;
-        int secondMax = -1;
+        int max = Integer.MIN_VALUE;
+        int secondMax = Integer.MIN_VALUE;
 
         for (int i = 0; i < a.length; i++) {
 

@@ -18,9 +18,9 @@ public class MadhavArray {
     static int isMadhavArray(int[] a) {
         boolean correctLength = false;
         int n = 2;
-        double checkLength = 1;
-        while (checkLength <= a.length) {
-            checkLength = n * (n + 1) / 2.0;
+        int checkLength = 1;
+        while (checkLength < a.length) {
+            checkLength = n * (n + 1) / 2;
             if (checkLength == a.length) {
                 correctLength = true;
                 break;
@@ -28,6 +28,7 @@ public class MadhavArray {
             n++;
         }
         if (!correctLength) return 0;
+        
         int index = 1;
         for (int i = 2; index < a.length; i++) {
             int sum = 0;

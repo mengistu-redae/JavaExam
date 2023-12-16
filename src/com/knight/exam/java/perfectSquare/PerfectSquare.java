@@ -14,11 +14,12 @@ public class PerfectSquare {
         System.out.println(isPerfectSquare(-5));
 
         System.out.println();
-        Scanner input = new Scanner(System.in);
-        System.out.printf("Enter a integer number: ");
-        int num = input.nextInt();
-        int nextPerfectSquare = nextPerfectSquare(num);
-        System.out.printf("The next perfect square of %d is %d", num, nextPerfectSquare);
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.printf("Enter a integer number: ");
+            int num = input.nextInt();
+            int nextPerfectSquare = nextPerfectSquare(num);
+            System.out.printf("The next perfect square of %d is %d", num, nextPerfectSquare);
+        }
     }
 
     static int nextPerfectSquare(int n) {

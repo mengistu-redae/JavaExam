@@ -24,14 +24,14 @@ public class NValuesArray {
         boolean uniqueFlag;
 
         for (int anA : a) {
-            uniqueFlag = false;
+            uniqueFlag = true;
             for (int anUnique : uniqueArray) {
                 if (anA == anUnique) {
-                    uniqueFlag = true;
+                    uniqueFlag = false;
                     break;
                 }
             }
-            if (!uniqueFlag) {
+            if (uniqueFlag) {
                 if (totalAdded >= n) return 0;
                 uniqueArray[totalAdded] = anA;
                 totalAdded++;

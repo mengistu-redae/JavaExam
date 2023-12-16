@@ -24,7 +24,7 @@ public class CubePowerful {
         while (nCopy > 0) {
             int digit = nCopy % 10;
             nCopy /= 10;
-            int cube = digit;
+            int cube = digit*digit*digit;
             
             sum += cube;
         }

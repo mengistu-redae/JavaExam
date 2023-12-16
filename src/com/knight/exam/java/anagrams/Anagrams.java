@@ -21,6 +21,7 @@ public class Anagrams {
 
         if((a1 == null && a2 != null) || (a1 != null && a2 == null)) //this case is not given in original question
             return 0;
+            
         if (a1.length != a2.length) 
             return 0;
 

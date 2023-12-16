@@ -15,11 +15,12 @@ public class ZeroLimited {
     }
 
     //as per the question, solution with single loop is best
-    static int isZeroLimited1(int[] a) {
+    static int isZeroLimited(int[] a) {
         int n=0;
         for (int i = 0; i < a.length; i++) { 
             if(i == 3*n+1){
-                if(a[i] != 0) return 0;
+                if(a[i] != 0) 
+                    return 0;
 
                 n++;
             }
@@ -30,7 +31,7 @@ public class ZeroLimited {
     }
 
     //using nested loops
-    static int isZeroLimited(int[] a) {
+    static int isZeroLimited1(int[] a) {
         for (int x = 1; x < a.length; x += 3) { // x = 3 * n + 1 = 1, 4, 7, 10, ...
 
             for (int i = 0; i < a.length; i++) {

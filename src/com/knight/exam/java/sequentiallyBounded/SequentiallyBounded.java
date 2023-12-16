@@ -32,7 +32,7 @@ public class SequentiallyBounded {
             else
                 countSequence = 1;
 
-            if (a[index] <= countSequence)
+            if ( countSequence >= a[index])
                 return 0;
         }
         return 1;

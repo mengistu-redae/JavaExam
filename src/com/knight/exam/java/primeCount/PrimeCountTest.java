@@ -7,15 +7,16 @@ import java.util.Scanner;
  */
 public class PrimeCountTest {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.printf("Enter the starting integer: ");
-        int start = input.nextInt();
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.printf("Enter the starting integer: ");
+            int start = input.nextInt();
 
-        System.out.printf("Enter the ending integer: ");
-        int end = input.nextInt();
+            System.out.printf("Enter the ending integer: ");
+            int end = input.nextInt();
 
-        int primeCount = PrimeCount.primeCount(start, end);
+            int primeCount = PrimeCount.primeCount(start, end);
 
-        System.out.printf("The number of prime numbers between %d and %d is %d", start, end, primeCount);
+            System.out.printf("The number of prime numbers between %d and %d is %d", start, end, primeCount);
+        }
     }
 }

@@ -21,10 +21,15 @@ public class TriangularNumber {
     static int isTriangular(int n) {
 
         int sum = 0;
-        for (int i = 1; sum < n; i++) {
-            sum += i;
+        int i=1;
+        while(sum < n){
+            sum=sum+i;
+            i++;
         }
-        if (sum == n) return 1;
+        
+        if (sum == n) 
+            return 1;
+            
         return 0;
     }
 }
